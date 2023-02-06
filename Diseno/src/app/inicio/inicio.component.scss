@@ -1,0 +1,403 @@
+body{
+    background-color: rgb(236, 236, 236);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+
+.sidebar{
+    background: white;
+    width: 18%;
+    height: 100%;
+    border-radius: 15px;
+    font-family: 'Rubik', sans-serif;
+
+    
+    .sidebar__cabecera {
+        height: 80px;
+        display: flex;
+
+        .ingreso {
+            background: #be40dd;
+            margin: auto;
+            margin-left: 10px;
+            padding: 6px 12px;
+            border-radius: 15px;
+            color: white;
+        }
+
+        .sidebar-titulo {
+            background: #e4e4e4;
+            padding: 6px 20px;
+            margin: auto;
+            margin-left: -40px;
+            border-radius: 15px;
+        }
+    }
+
+    .sidebar__tags {
+        position: relative;
+        height: auto;
+        font-size: 110%;
+
+        ul {
+            
+            li {
+                // background: #f0f0f0;
+                padding: 10px 0px 10px 10%; //top, right, bottom, left.
+                // padding-left: 30px;
+                // padding-top: 10px;
+                // padding-bottom: 10px;
+                margin-bottom: 8px;
+                cursor: pointer;
+                border-radius: 10px;
+                margin-inline: 10px;
+                transition: .3s;
+            }
+
+            li:hover {
+                box-shadow: 0 5px 10px rgb(128, 128, 128, 0.2);
+            }
+        }
+    }
+}
+
+.discusiones {
+    background: #f6f6f6;
+    width: 80%;
+    height: 100%;
+    border-radius: 15px;
+    padding: 30px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    .btn__agregar-comentario {
+        background: #28D443;
+        position: absolute;
+        width: 117px;
+        height: 35px;
+        right: 40px;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        padding-inline: 15px;
+        padding-right: 30px;
+        align-content: center;
+        border-radius: 15px;
+        margin-right: 20px;
+        cursor: pointer;
+        font-family: 'Rubik', sans-serif;
+        z-index: 1;
+
+        * {
+            padding: 5px;
+        }
+
+        i {
+            font-size: 130%;
+            // font-weight: 100;
+        }
+
+        span {
+            font-size: 110%;
+            // font-weight: 100;
+        }
+
+    }
+
+    .conjunto-comentario {
+        margin-inline: 80px 20%;
+        height: auto;
+        
+        .perfil-comentarista {
+            margin-left: -80px;
+            float: left;
+        }
+
+        .comentario {
+            background: #E6E6E6;
+            border-radius: 18px;
+            padding: 14px;
+            font-family: 'Rubik', sans-serif;
+            height: min-content;
+            margin-bottom: 10px;
+        }
+
+        .comentario-acciones {
+            display: flex;
+
+            .btn__agregar-opinion { //Boton Opinar...
+                background: white;
+                border-radius: 50px;
+                cursor: pointer;
+                padding: 5px 120px 5px 20px;
+                color: #ABABAB;
+                font-weight: 200;
+                box-shadow: 5px 5px 10px rgba(128,128,128,.3);
+            }
+
+            .comentario-reacciones { //Barra de acciones del comentario
+                background: white;
+                width: 100px;
+                // height: auto;
+                height: min-content;
+                display: flex;
+                justify-content: space-around;
+                border-radius: 30px;
+                padding-inline: 10px;
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left: 10px;
+                // margin-top: -20px;
+                // margin-right: 20px;
+                box-shadow: 5px 5px 10px rgba(128,128,128,.3);
+                
+                .conjunto-likes {
+
+                    .meGusta,
+                    .noMeGusta { //Boton "me gusta" y "no me gusta"
+                        color: rgb(194, 2, 2);
+                        cursor: pointer;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        float: left;
+                    }
+                    
+                    .meGusta {
+                        display: none;
+                    }
+                    
+                    .contador-megusta {
+                        margin-left: 5px;
+                        // color: rgb(194, 2, 2);
+                    }
+                }
+
+                .fa-share-nodes {
+                    color: rgb(60, 112, 255);
+                }
+            }
+        }
+    }
+
+    .conjunto-opinion {
+        position: relative;
+        margin-inline: 80px 20%;
+        margin-top: 30px;
+        height: auto;
+
+        .perfil-opinador {
+            margin-right: -80px;
+            float: right;
+        }
+
+        .opinion {
+            background: #38CC20;
+            position: relative;
+            text-align: end;
+            margin-left: auto;
+            color: white;
+        }
+        .opinion-acciones {
+            display: flex;
+            
+            .opinion-reacciones {
+            background: white;
+                width: 100px;
+                // height: auto;
+                height: min-content;
+                display: flex;
+                justify-content: space-around;
+                border-radius: 30px;
+                padding-inline: 10px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: auto;
+                box-shadow: 5px 5px 10px rgba(128,128,128,.3);
+
+                .conjunto-likes {
+
+                    .meGusta,
+                    .noMeGusta { //Boton "me gusta" y "no me gusta"
+                        color: rgb(194, 2, 2);
+                        cursor: pointer;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        float: left;
+                    }
+                    
+                    .meGusta {
+                        display: none;
+                    }
+                    
+                    .contador-megusta {
+                        margin-left: 5px;
+                        // color: rgb(194, 2, 2);
+                    }
+                }
+
+                .fa-share-nodes {
+                    color: rgb(60, 112, 255);
+                }
+            }
+        }
+    }
+}
+
+.nuevo-comentario-opinion {
+    background: rgba(255,255,255);
+    position: absolute;
+    left: 30%;
+    right: 20%;
+    top: 40px;
+    height: 70vh;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgb(128, 128, 128, 0.4);
+    // opacity: .92;
+    display: none;
+
+    .titulo { //Titulo nuevo comentario/opinion
+        width: 100%;
+        height: 20%;
+        display: flex;
+
+        h2 {
+            margin: auto;
+        }
+    }
+
+    .texto {
+        width: 100%;
+        height: 65%;
+        display: flex;
+        
+
+        textarea {
+            width: 90%;
+            margin-inline: auto;
+            border-radius: 15px;
+            padding: 10px;
+            border: none;
+            box-shadow: inset 5px 5px 10px rgb(128, 128, 128, 0.4),
+                        inset -5px -5px 10px rgb(200, 200, 200, 0.4);
+        }
+    }
+
+    .botones {
+        width: 100%;
+        height: 15%;
+        display: flex;
+        justify-content: space-around;
+
+        .btn-cancelar,
+        .btn-publicar {
+            width: auto;
+            height: auto;
+            display: flex;
+            cursor: pointer;
+
+            a {
+                background: orange;
+                padding: 10px 20px;
+                margin: auto;
+                border-radius: 50px;
+                color: white;
+            }
+        }
+
+        .btn-cancelar a {
+            background: white;
+            border: 2px solid orange;
+            color: orange;
+        }
+    }
+}
+
+.info-usuario {
+    background: rgba(255,255,255);
+    position: absolute;
+    left: 35%;
+    right: 25%;
+    top: 40px;
+    height: 70vh;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgb(128, 128, 128, 0.4);
+    display: none;
+}
+
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.perfil-comentarista,
+.perfil-opinador {
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.perfil-comentarista > i,
+.perfil-opinador > i {
+    margin: auto;
+    font-size: 140%;
+}
+
+.comentario,
+.opinion {
+    background: #E6E6E6;
+    border-radius: 18px;
+    padding: 14px;
+    font-family: 'Rubik', sans-serif;
+    height: auto;
+    max-width: max-content;
+    // width: 100%;
+}
+
+
+// Animacion para crear nuevo comentario o nueva opinion
+
+// .slide-fwd-center {
+// 	-webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+// 	        animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+// }
+
+
+//  @-webkit-keyframes slide-fwd-center {
+//     0% {
+//       -webkit-transform: translateZ(0);
+//               transform: translateZ(0);
+//     }
+//     100% {
+//       -webkit-transform: translateZ(160px);
+//               transform: translateZ(160px);
+//     }
+//   }
+//   @keyframes slide-fwd-center {
+//     0% {
+//       -webkit-transform: translateZ(0);
+//               transform: translateZ(0);
+//     }
+//     100% {
+//       -webkit-transform: translateZ(160px);
+//               transform: translateZ(160px);
+//     }
+//   }
+  

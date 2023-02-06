@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="sidebar">
+        
+        <div class="sidebar__cabecera">
+            <a class="ingreso" href="">
+                <i class="fa-solid fa-right-to-bracket"></i>
+            </a>
+            <a class="sidebar-titulo " href="">Chat2</a>
+        </div>
+        <div class="sidebar__tags">
+            <ul>
+                <li><a href="">Chat1</a></li>
+                <li><a href="">Chat2</a></li>
+                <li><a href="">Chat3</a></li>
+                <li><a href="">Chat4</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="discusiones">
+        <a class="btn__agregar-comentario" (click)="NuevoComentario()">
+            <div class="">
+                
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <span>Nuevo</span>
+        </a>
+        <div class="conjunto-charla">
+
+            <div class="conjunto-comentario">
+                <div class="perfil-comentarista">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="comentario">
+                    Estaria bueno que comenzaran a hacer competencias tecnologicas en las que se desarrollen herramientas para facilitar los trabajos, como robots y esas cosas.
+                </div>
+                <div class="comentario-acciones">
+                    
+                    <a class="btn__agregar-opinion" (click)="NuevaOpinion()">
+                        Opinar...
+                    </a>
+                    <div class="comentario-reacciones">
+                        <div class="conjunto-likes">
+
+                            <a class="noMeGusta" (click)="meGusta()">
+                                <i class="fa-regular fa-heart"></i>
+                        </a>
+                        <a class="meGusta" (click)="meGusta()">
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                        <span class="contador-megusta">1</span>
+                    </div>
+                    
+                        <a href="">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="conjunto-opinion">
+                <div class="perfil-opinador">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="opinion">
+                    Y tambien que se empiecen a dar cursos de eso.
+                </div>
+                <div class="opinion-acciones">
+                    
+                
+                    <div class="opinion-reacciones">
+                        <div class="conjunto-likes">
+
+                            <a class="noMeGusta" (click)="meGusta()">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a class="meGusta" (click)="meGusta()">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                            <span class="contador-megusta">1</span>
+                        </div>
+                    
+                        <a href="">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="conjunto-opinion">
+                <div class="perfil-opinador">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="opinion">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia minus labore dignissimos quia natus quae tenetur vel aliquid quibusdam aperiam voluptate beatae quis nam suscipit voluptatum, praesentium distinctio magnam tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse inventore repellendus, mollitia dolore architecto, asperiores praesentium ducimus aperiam ab vel amet eius reiciendis rem dicta veritatis dolor distinctio commodi. Fugit!
+                </div>
+            </div>
+
+            <div class="conjunto-opinion">
+                <div class="perfil-opinador">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="opinion">
+                    Y tambien que se empiecen a dar cursos de eso.
+                </div>
+            </div>
+            
+            <hr>
+        </div>
+        <div class="conjunto-charla">
+
+            <div class="conjunto-comentario">
+                <div class="perfil-comentarista">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="comentario">
+                    Estaria bueno que comenzaran Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi tenetur exercitationem cupiditate quis itaque id fugiat suscipit rerum ipsum libero totam voluptate quibusdam illum, sint iusto. Nam enim veniam velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, libero voluptatem. Inventore quo nesciunt porro quam est qui mollitia repellendus odio dolorum? Natus repellat odit labore, minus nemo iure id.
+                </div>
+                <div class="comentario-acciones">
+                    
+                    <a class="btn__agregar-opinion" (click)="NuevaOpinion()">
+                        Opinar...
+                    </a>
+                    <div class="comentario-reacciones">
+                        <div class="conjunto-likes">
+
+                            <a class="noMeGusta" (click)="meGusta()">
+                                <i class="fa-regular fa-heart"></i>
+                        </a>
+                        <a class="meGusta" (click)="meGusta()">
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                        <span class="contador-megusta">1</span>
+                    </div>
+                    
+                        <a href="">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="conjunto-opinion">
+                <div class="perfil-opinador">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="opinion">
+                    Y tambien que se empiecen a dar cursos de eso.
+                </div>
+            </div>
+
+            <div class="conjunto-opinion">
+                <div class="perfil-opinador">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="opinion">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia minus labore dignissimos quia natus quae tenetur vel aliquid quibusdam aperiam voluptate beatae quis nam suscipit voluptatum, praesentium distinctio magnam tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse inventore repellendus, mollitia dolore architecto, asperiores praesentium ducimus aperiam ab vel amet eius reiciendis rem dicta veritatis dolor distinctio commodi. Fugit!
+                </div>
+            </div>
+
+            <div class="conjunto-opinion">
+                <div class="perfil-opinador">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="opinion">
+                    Y tambien que se empiecen a dar cursos de eso.
+                </div>
+            </div>
+            
+            <hr>
+        </div>
+        
+    </div>
+
+    <div class="nuevo-comentario-opinion">
+        <div class="titulo">
+            <h2 class="comentario-u-opinion">Nuevo comentario</h2>
+        </div>
+        <div class="texto">
+            <textarea placeholder="Ingrese un comentario aqui!" name="" id="" cols="" rows=""></textarea>
+        </div>
+        <div class="botones">
+            <div class="btn-cancelar" (click)="NuevoComentario()">
+                <a>Cancelar</a>
+            </div>
+            <div class="btn-publicar">
+                <a>Publicar</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="info-usuario">
+        
+    </div>
+</body>
+</html>
+
+<!---->
