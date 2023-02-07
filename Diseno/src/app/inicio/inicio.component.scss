@@ -20,20 +20,10 @@ body{
         height: 80px;
         display: flex;
 
-        .ingreso {
-            background: #be40dd;
-            margin: auto;
-            margin-left: 10px;
-            padding: 6px 12px;
-            border-radius: 15px;
-            color: white;
-        }
-
         .sidebar-titulo {
             background: #e4e4e4;
             padding: 6px 20px;
             margin: auto;
-            margin-left: -40px;
             border-radius: 15px;
         }
     }
@@ -111,6 +101,7 @@ body{
     .conjunto-comentario {
         margin-inline: 80px 20%;
         height: auto;
+        margin-bottom: 30px;
         
         .perfil-comentarista {
             margin-left: -80px;
@@ -186,7 +177,7 @@ body{
     .conjunto-opinion {
         position: relative;
         margin-inline: 80px 20%;
-        margin-top: 30px;
+        margin-bottom: 30px;
         height: auto;
 
         .perfil-opinador {
